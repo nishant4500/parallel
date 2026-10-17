@@ -1,0 +1,19 @@
+relationship e83048b5-44b0-45e9-9629-139d1585ec7f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Data.Date
+	toColumn: LocalDateTable_f09585ff-bbba-483e-b3f5-a95d7411a722.Date
+
+relationship 5d56cf5b-af4e-43ff-b465-80f86116b638
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Table 2 (Data)'.Column1
+	toColumn: LocalDateTable_a006d611-0abf-4699-8407-acb12207351b.Date
+
+relationship 0fb78ebe-4e7a-48b1-b902-5f3859b975df
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Table 3 (Data)'.Column1
+	toColumn: LocalDateTable_e21b59b9-745c-43a3-ae8b-5a0d7f402452.Date
+
+relationship AutoDetected_252e9d1f-16d5-48b5-9ce3-ec36db49ef02
+	fromColumn: Data.'Unit Price'
+	toColumn: 'Table 1 (Data)'.'Unit Price'
+
