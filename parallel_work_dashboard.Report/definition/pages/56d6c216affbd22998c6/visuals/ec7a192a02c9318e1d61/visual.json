@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "ec7a192a02c9318e1d61",
+  "position": {
+    "x": 561.236871639391,
+    "y": 157.80498835826396,
+    "z": 0,
+    "height": 280,
+    "width": 280,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Table 1 (Data)"
+                    }
+                  },
+                  "Property": "Revenue"
+                }
+              },
+              "queryRef": "Table 1 (Data).Revenue",
+              "nativeQueryRef": "Revenue",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Table 1 (Data)"
+                    }
+                  },
+                  "Property": "Unit Price"
+                }
+              },
+              "queryRef": "Table 1 (Data).Unit Price",
+              "nativeQueryRef": "Unit Price",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2fe42e97576a733a5cd9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Table 1 (Data)"
+              }
+            },
+            "Property": "Unit Price"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "d71faaf945cbccdc610d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Table 1 (Data)"
+              }
+            },
+            "Property": "Revenue"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
