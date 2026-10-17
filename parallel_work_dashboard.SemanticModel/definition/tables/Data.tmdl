@@ -6,6 +6,10 @@ table Data
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Total Units Sold' = SUM('Data'[Units Sold])
+		formatString: 0
+		lineageTag: 6af9fa45-c73f-4428-9db9-e6e392926d1c
+
 	column Date
 		dataType: dateTime
 		formatString: Long Date
