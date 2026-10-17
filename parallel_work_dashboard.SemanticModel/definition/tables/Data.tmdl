@@ -120,7 +120,7 @@ table Data
 		mode: import
 		source =
 				let
-				    Source = Excel.Workbook(File.Contents("F:\S data\S data\Sales Data.xlsx"), null, true),
+				    Source = Excel.Workbook(File.Contents("C:\Users\Nishant Dwivedi\Desktop\Downloads\S data\S data\Sales Data.xlsx"), null, true),
 				    Data_Sheet = Source{[Item="Data",Kind="Sheet"]}[Data],
 				    #"Promoted Headers" = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),
 				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", type date}, {"Sales Rep", type text}, {"Region", type text}, {"Product", type text}, {"Sales Data", Int64.Type}, {"Category", type text}, {"Units Sold", Int64.Type}, {"Column8", type any}, {"Column9", type any}, {"Column10", type any}, {"Unit Price", type number}, {"Revenue", type number}})
